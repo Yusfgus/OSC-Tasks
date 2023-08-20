@@ -1,0 +1,18 @@
+sudo useradd -m osc
+ls /home/
+sudo passwd osc
+sudo groupadd osc_group
+sudo usermod -a -G osc_group osc
+sudo usermod -a -G sudo osc
+su osc
+cd osc
+mkdir permission_practice
+cd permission_practice
+touch public_file.txt
+chmod 666 public_file.txt
+touch private_file.txt
+chmod 600 private_file.txt private_file.txt
+touch executable_script.sh
+chmod 750 executable_script.sh
+sudo chown yusfgus private_file.txt
+sudo chgrp osc_group private_file.txt
