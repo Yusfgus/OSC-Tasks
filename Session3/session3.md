@@ -53,5 +53,9 @@ jobs
 
 ## 5. Package management
 ```
+sudo apt install neofetch
+sudo apt remove neofetch
 ```
-![step 5]()
+![step 5_1](Step5_1.png)
+![step 5_2](Step5_2.png)
+![step 5_3](Step5_3.png)

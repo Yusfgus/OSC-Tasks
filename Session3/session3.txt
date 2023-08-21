@@ -16,3 +16,10 @@ touch executable_script.sh
 chmod 750 executable_script.sh
 sudo chown yusfgus private_file.txt
 sudo chgrp osc_group private_file.txt
+sleep 100 &
+kill -s KILL 6374
+vim
+killall vim
+jobs
+sudo apt install neofetch
+sudo apt remove neofetch
