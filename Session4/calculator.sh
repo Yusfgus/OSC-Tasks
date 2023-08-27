@@ -5,8 +5,8 @@ echo -n "Enter your choice: "
 read choice
 result=0
 
-if [[ $choice -ne 5 ]]
-then
+while [[ $choice -ne 5 ]]
+do
 	echo -n "Enter the first number: "
 	read num1
 	echo -n "Enter the second number: "
@@ -31,8 +31,9 @@ then
 			;;
 	esac
 	echo "$num2 = $result"
+	echo -n "Enter your choice: "
+	read choice
+done
+echo "Exitinig..."
 
-else
-	echo "Exitinig..."
-fi
 
